@@ -19,9 +19,9 @@
     - [Ultrasonic sensor - turtling behavior](#ultrasonic-sensor---turtling-behavior)
   - [Future work](#future-work)
 
-## Introduction 
+## Introduction
 
-![robot](./docs/robot.png "Robot")
+<img src="./docs/robot.png" width=500>
 
 This project comprises of a 3D-printed robot arm with four separate software demos to give an idea of potential use cases. 
 
@@ -120,6 +120,6 @@ Here's a video of the interaction:
 
 ## Future work
 
-One idea was to run a ROS node on the Arduino using the `rosserial_arduino` package. However, ROS master requires a Linux device for maximum compatibility. A good candidate is a Raspberry Pi. However, compiling ROS on a Raspberry Pi takes a substantial amount of time. More promising are ready-made Raspbian images with ROS pre-installed that can be flashed onto the Raspberry Pi. 
+One idea was to run a ROS node on the Arduino using the `rosserial_arduino` package. However, ROS master requires a Linux device for maximum compatibility. A good candidate is a Raspberry Pi. However, compiling ROS on a Raspberry Pi takes a substantial amount of time. More promising are ready-made Raspbian images with ROS pre-installed that can be flashed onto the Raspberry Pi.
 
 ROS opens up a number of possibilities. Using the pub/sub messaging system, it is possible to synchronize multiple processes (such as the four demos) to run together. It also opens up possibilities for integrations with numerous APIs such as speech recognition, camera tracking, services via webhooks etc.
