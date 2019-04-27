@@ -11,6 +11,7 @@
   - [Setup](#setup)
     - [Robot assembly](#robot-assembly)
     - [Schematic](#schematic)
+      - [Pin connections](#pin-connections)
     - [Software](#software)
   - [Demos](#demos)
     - [Rotary encoders - manual control](#rotary-encoders---manual-control)
@@ -27,13 +28,15 @@ This project comprises of a 3D-printed robot arm with four separate software dem
 
 The arm is based on the EEZYBot MK1. The parts were printed in the Center for Engineering, Innovation and Design (CEID). A custom base plate was also designed and printed to house the various electrical components. 
 
-The robot arm has 4 DOF: waist/base, shoulder, elbow and gripper. In software, these are referred to as `base/BS`, `upDown/UP`, `frontBack/FB` and `gripper/GR` respectively. 
+The robot arm has 4 DOF: waist/base, shoulder, elbow and gripper. In software, these are referred to as `base/BS`, `upDown/UD`, `frontBack/FB` and `gripper/GR` respectively. 
 
 ## Poster
 
 Below is the poster highlighting the four software demos, which was used for the poster session. 
 
 ![poster](./docs/poster/poster.png "Poster")
+
+PDF is available [here](./docs/poster/poster.pdf). 
 
 ## Setup
 
@@ -53,6 +56,29 @@ Besides the robot, the following additional components are required:
 - Breadboard and wire
 
 These are connected as per the following schematic:
+
+
+PDF is available [here](). 
+
+#### Pin connections
+
+The robot driver has a `driverSetup()` function which accepts pins for each servo. In the schematic, the following pins are used:
+
+- frontBack/FB: 10
+- upDown/UD: 11
+- gripper/GR: 12
+- base/BS: 13
+
+The rotary encoders are connected to:
+- frontBack/FB: 2, 3
+- upDown/UD: 4, 5
+- gripper/GR: 6, 7
+- base/BS: 8, 9
+
+Lastly, the HC-SR04 ultrasonic sensor is connected to:
+
+- TRIG: A0
+- ECHO: A1
 
 ### Software
 
