@@ -24,7 +24,7 @@
 
 <img src="./docs/robot.png" width=500>
 
-This project comprises of a 3D-printed robot arm with four separate software demos to give an idea of potential use cases. 
+This project comprises of a 3D-printed robot arm with four separate software demos to give an idea of potential use cases.
 
 The arm is based on the EEZYBot MK1. The parts were printed in the Center for Engineering, Innovation and Design (CEID). A custom base plate was also designed and printed to house the various electrical components. 
 
@@ -111,7 +111,7 @@ To use this demo, upload `src/demo_0` to the Arduino. Make sure the servos are p
 
 You should be able to control each joint using a rotary encoder. The input saturates to a point - the joint can turn no further.
 
-Here's a video of the interaction:
+Here's a video of the interaction: <https://youtu.be/vtAuMasHtZk>
 
 ### Pick and place
 
@@ -119,8 +119,7 @@ To use this demo, upload `src/demo_1` to the Arduino.
 
 The `driver.hpp` and `driver.cpp` files contain useful helper functions such as `moveLeft()` and `moveUp()` which can be used to script some interactions without writing much code. The movements are based on some thresholds that may be modified to adapt to different use cases.
 
-These have been used to create some pick and place behavior. Here's a video of the interaction:
-
+These have been used to create some pick and place behavior. Here's a video of the interaction: <https://youtu.be/sw9eGx-feeU>
 
 ### Game controller - manual control
 
@@ -133,7 +132,7 @@ Here are the controls:
 - Moving the right stick forward-backward turns the robot elbow.
 - Pressing A opens and closes the gripper.
 
-Here's a video of the interaction:
+Here's a video of the interaction: <https://youtu.be/9GZomNd3jlo>
 
 ### Ultrasonic sensor - turtling behavior
 
@@ -143,7 +142,7 @@ The sensor is attached to the robot gripper ("the face") using adhesive.
 
 When an object, e.g. human hand, gets too close, the robot retracts (as if into a shell). When the hand goes further away, the robot moves forward back to its original position, as if curious.
 
-Here's a video of the interaction:
+Here's a video of the interaction: <https://youtu.be/myK5MGR7y6I>
 
 ## Future work
 
