@@ -10,7 +10,7 @@
   - [Poster](#poster)
   - [Setup](#setup)
     - [Robot assembly](#robot-assembly)
-    - [Schematic](#schematic)
+    - [Schematic/breadboard](#schematicbreadboard)
       - [Pin connections](#pin-connections)
     - [Software](#software)
   - [Demos](#demos)
@@ -44,7 +44,7 @@ PDF is available [here](./docs/poster/poster.pdf).
 
 `stl` files and assembly instructions can be found here: <http://www.eezyrobots.it/eba_mk1.html#>
 
-### Schematic
+### Schematic/breadboard
 
 Besides the robot, the following additional components are required: 
 
@@ -55,10 +55,11 @@ Besides the robot, the following additional components are required:
 - 1 - 4xAA Battery holder (to power servos) 
 - Breadboard and wire
 
-These are connected as per the following schematic:
+These are connected as per the following breadboard view:
 
+![breadboard](./docs/schematic/schematic_bb.png "Breadboard View")
 
-PDF is available [here](). 
+PDF is available [here](./docs/schematic/schematic_bb.pdf).
 
 #### Pin connections
 
